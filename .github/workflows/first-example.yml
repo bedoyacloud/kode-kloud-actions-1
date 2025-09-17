@@ -8,11 +8,8 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v4.3.0
 
-            - name: List and read File
-              run: |
-                echo "my first Github Actions Job"
-                ls -ltra
-                cat README.md
+            - name: Cow
+              run: sudo apt-get install cowsay -y
 
             - name: Generate ASCII Artwork
               run: cowsay -f dragon "Run for cover, I am a Dragon...RAWR" > dragon.txt
